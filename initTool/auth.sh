@@ -1,0 +1,19 @@
+echo start
+date
+
+chmod go-w $HOME 
+
+if [ ! -d $HOME/.ssh ];then
+   mkdir $HOME/.ssh
+   chmod 700  $HOME/.ssh
+fi
+
+cd $HOME/.ssh
+
+echo ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA8UPQl37bKi52ci1R3BQs7cp1fvxgRYw6S3duK04MrFeQYM2x8NEQ4qu1A3uzN+VPmmjI5bzHJsRTxFVun5V03YIv5xw9sBR18MAI5sgD/QBg0aV2IfV50vTNf0u8tl+Rk0PsQmlPdzAdH2i/OGU43adhD7OrDph9pfzF1fCffsu/VoVPRYciVrFbr7cKZLuUQVdS6/sHQmrwmr534MLbor5xcGdKDg/AChdGpwOSxKTzhxJPsJVowNCdc/wMTtY2kY26H4Upq8JZvuwvPOHe8OcoY4D2+3w/V8tcnfRZ2YCs9CaWHC4J6mWNWSlbXtmPJw3tWdZND1KSkIPGLb1utw== jbsap01@JBS-ap01vlk >> authorized_keys
+echo ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzPx1DWoqefaVaiLw8fMtYr41LV7TajOHLvdxCtiNlhW8YmnsA9SGWsIt52fCthv5pjfbWYSxwIH7tI8BYFYtHUAK6s2/Nr+6VDgQGuRcu02GygyDKT931I2F67QA5m7JY0twl+JxuRbSNZB0Q6aHAU1rz45g4MqXgrTLki6rPXFZ3jAa4JU4DyFnoqIxM6JVYgZ/gfbYcpnkBL5o/C2bAAFhopN5OAHRVOc8wqkRJ7cw2qQ4Va3MmK6po/DTeaaJ4gnPSo2DClpCRxtSZCG9HvJ1nAtLZjv5QUUbT/GikgTL1vB21/g1P3gRjVH/OnpAzHUtGmAPPiP+OqEg6W3V1Q== jbsap02@JBS-ap02vlk >> authorized_keys
+echo ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAv6gYavKIZyCxVt5ptCSpPWQhnu6JXiwLL/MJ9L+QCo69fFO5hZ3dLcn89eaxx/k48SenhUdS29rdq005/tS7QHWVD0lLkzp3XqLDGxrySzia0HxsF+3scwj4eyuj2zMzxBXp3x91PCB6Rnk+nRYKDEU3erSzo1a0lsdy4sZY50wcFHE3apBWqDf7LKbs/9RW4OwMMWqL7EWkIKbKkS2/19QVLTHf9jMWWL2XfDaJdh31+IWBPpnIJw4E9Wd3AjXY+RdhglP6+xVHJNYJycnl0SkIea5846OZrPfjF7nwfF5abTuKHv+QTfRR12ObV2p9YvZlhWkz/vBvdpuXHcCB2w== jbsap03@JBS-ap03vlk >> authorized_keys
+
+chmod 600 authorized_keys
+echo success
+date

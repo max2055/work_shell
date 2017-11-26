@@ -1,0 +1,80 @@
+clbpsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.71)(PORT = 10007))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.73)(PORT = 10007))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = clbpsdb)
+    )
+   )
+
+uwbpsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.61)(PORT = 10006))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.63)(PORT = 10006))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = uwbpsdb)
+    )
+   )
+
+commdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.7)(PORT = 10002))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.9)(PORT = 10002))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = commdb)
+    )
+   )
+
+pcmsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.31)(PORT = 10004))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.33)(PORT = 10004))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = pcmsdb)
+    )
+   )
+
+ipmsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.2)(PORT = 10001))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.4)(PORT = 10001))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = ipmsdb)
+    )
+   )
+
+orbpsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.41)(PORT = 10005))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.43)(PORT = 10005))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = orbpsdb)
+    )
+   )
+
+csbpsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.12)(PORT = 10001))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.14)(PORT = 10001))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = csbpsdb)
+    )
+   )
+
+tsmsdb =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.21)(PORT = 10003))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.20.12.23)(PORT = 10003))
+    (CONNECT_DATA =
+       (SERVER = DEDICATED)
+       (SERVICE_NAME = tsmsdb)
+    )
+   )
+
