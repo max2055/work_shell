@@ -8,9 +8,9 @@ else
 fi
 
 SYSNAME=$1
+echo "SYSNAME is $SYSNAME"
 APPTYPE=$2
 
-. $HOME/.bash_profile
 datestring=`date +"%Y%m%d%H%M%S"`
 
 echo ""
@@ -91,7 +91,6 @@ echo ""
 echo "step 4 : preparing weblogic"
 sleep 2
 cd $HOME/initTool/
-cp .create-weblogic-domain.sh $HOME/initTool/create-weblogic-domain.sh
 cp .weblogic.sh $HOME/initTool/weblogic.sh
 cp .deploy.sh $HOME/app/deploy.sh
 cp .undeploy.sh $HOME/app/undeploy.sh
